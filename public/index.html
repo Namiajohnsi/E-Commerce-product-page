@@ -3,50 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Commerce Demo</title>
-  <!-- Link to external CSS -->
-  <link rel="stylesheet" href="style.css">
+  <title>E-Commerce Demo - Phase 4</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="container">
-    <div class="filters">
-      <h2>Filters</h2>
-      <label>Category</label>
-      <select>
-        <option>All</option>
-        <option>Clothing</option>
-        <option>Footwear</option>
-      </select>
+<body class="bg-gray-100 min-h-screen">
 
-      <label>Max Price: $200</label>
-      <input type="range" min="0" max="200" value="200">
-
-      <label>Search</label>
-      <input type="text" placeholder="Search products...">
+  <!-- Navbar -->
+  <nav class="bg-blue-600 text-white p-4 flex justify-between items-center">
+    <div class="text-xl font-bold">E-Commerce</div>
+    <div class="flex gap-4">
+      <button>Home</button>
+      <button>Wishlist</button>
+      <button>Cart</button>
     </div>
+  </nav>
 
-    <div class="products">
-      <div class="product-card">
-        <img src="https://via.placeholder.com/200x150/FF0000/FFFFFF?text=Red+Shirt" alt="Red Shirt">
-        <h3>Red Shirt</h3>
-        <p>Clothing</p>
-        <p class="price">$29</p>
+  <div class="container mx-auto p-4 flex flex-col md:flex-row gap-6">
+
+    <!-- Sidebar / Filters -->
+    <aside class="w-full md:w-1/4 bg-white p-4 rounded shadow space-y-4">
+      <h2 class="text-lg font-bold">Filters</h2>
+
+      <div>
+        <label class="font-semibold">Category</label>
+        <select class="w-full border rounded p-1">
+          <option value="">All</option>
+          <option>Clothing</option>
+          <option>Footwear</option>
+        </select>
       </div>
 
-      <div class="product-card">
-        <img src="https://via.placeholder.com/200x150/0000FF/FFFFFF?text=Blue+Jeans" alt="Blue Jeans">
-        <h3>Blue Jeans</h3>
-        <p>Clothing</p>
-        <p class="price">$59</p>
+      <div>
+        <label class="font-semibold">Max Price: $200</label>
+        <input type="range" min="0" max="200" value="200" class="w-full"/>
       </div>
 
-      <div class="product-card">
-        <img src="https://via.placeholder.com/200x150/00FF00/FFFFFF?text=Running+Shoes" alt="Running Shoes">
-        <h3>Running Shoes</h3>
+      <div>
+        <label class="font-semibold">Search</label>
+        <input type="text" placeholder="Search products..." class="w-full border rounded p-1"/>
+      </div>
+
+      <div>
+        <label class="font-semibold">Sort By</label>
+        <select class="w-full border rounded p-1">
+          <option value="">Default</option>
+          <option value="price-low">Price: Low → High</option>
+          <option value="price-high">Price: High → Low</option>
+          <option value="name-asc">Name: A → Z</option>
+          <option value="name-desc">Name: Z → A</option>
+        </select>
+      </div>
+    </aside>
+
+    <!-- Products Grid -->
+    <main class="w-full md:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Product Card -->
+      <div class="bg-white rounded-lg shadow p-4 hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/200x150/FF0000/FFFFFF?text=Red+Shirt" 
+             alt="Red Shirt" class="w-full h-40 object-cover rounded"/>
+        <h3 class="font-bold mt-2">Red Shirt</h3>
+        <p>Clothing</p>
+        <p class="text-blue-600 font-bold">$29</p>
+        <div class="mt-2 flex gap-2">
+          <button class="px-3 py-1 rounded bg-green-500 text-white">Add to Cart</button>
+          <button class="px-3 py-1 rounded bg-yellow-400 text-white">Wishlist</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow p-4 hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/200x150/0000FF/FFFFFF?text=Blue+Jeans" 
+             alt="Blue Jeans" class="w-full h-40 object-cover rounded"/>
+        <h3 class="font-bold mt-2">Blue Jeans</h3>
+        <p>Clothing</p>
+        <p class="text-blue-600 font-bold">$59</p>
+        <div class="mt-2 flex gap-2">
+          <button class="px-3 py-1 rounded bg-green-500 text-white">Add to Cart</button>
+          <button class="px-3 py-1 rounded bg-yellow-400 text-white">Wishlist</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow p-4 hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/200x150/00FF00/FFFFFF?text=Running+Shoes" 
+             alt="Running Shoes" class="w-full h-40 object-cover rounded"/>
+        <h3 class="font-bold mt-2">Running Shoes</h3>
         <p>Footwear</p>
-        <p class="price">$89</p>
+        <p class="text-blue-600 font-bold">$89</p>
+        <div class="mt-2 flex gap-2">
+          <button class="px-3 py-1 rounded bg-green-500 text-white">Add to Cart</button>
+          <button class="px-3 py-1 rounded bg-yellow-400 text-white">Wishlist</button>
+        </div>
       </div>
-    </div>
+    </main>
+
   </div>
+
 </body>
 </html>
