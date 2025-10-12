@@ -1,0 +1,133 @@
+[
+  {
+    "category": "Dresses",
+    "items": [
+      {
+        "brand": "Zara",
+        "name": "Floral Summer Dress",
+        "price": 2999,
+        "size": ["S", "M", "L"],
+        "color": "Red",
+        "img": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80",
+        "rating": 4.5,
+        "discount": 10
+      },
+      {
+        "brand": "H&M",
+        "name": "Casual Maxi Dress",
+        "price": 3999,
+        "size": ["M", "L", "XL"],
+        "color": "Blue",
+        "img": "https://images.unsplash.com/photo-1520975690385-ef743fa1eae2?auto=format&fit=crop&w=400&q=80",
+        "rating": 4.0,
+        "discount": 15
+      },
+      {
+        "brand": "Forever 21",
+        "name": "Off-Shoulder Midi Dress",
+        "price": 2599,
+        "size": ["S", "M"],
+        "color": "Yellow",
+        "img": "https://images.unsplash.com/photo-1520975690418-1a73b14ee57b?auto=format&fit=crop&w=400&q=80",
+        "rating": 4.2,
+        "discount": 12
+      },
+      {
+        "brand": "Mango",
+        "name": "Pleated Evening Dress",
+        "price": 4999,
+        "size": ["M", "L"],
+        "color": "Black",
+        "img": "https://images.unsplash.com/photo-1534081333815-ae5019106622?auto=format&fit=crop&w=400&q=80",
+        "rating": 4.7,
+        "discount": 8
+      }
+    ]
+  },
+  {
+    "category": "Shoes",
+    "items": [
+      {
+        "brand": "Nike",
+        "name": "Air Max 270",
+        "price": 9999,
+        "size": [7, 8, 9, 10, 11],
+        "color": "Black",
+        "img": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=400&q=80",
+        "rating": 4.8,
+        "discount": 5
+      },
+      {
+        "brand": "Adidas",
+        "name": "Ultraboost 22",
+        "price": 10999,
+        "size": [6, 7, 8, 9, 10],
+        "color": "White",
+        "img": "https://images.unsplash.com/photo-1552346154-9e420f13e4ea?auto=format&fit=crop&w=400&q=80",
+        "rating": 4.7,
+        "discount": 8
+      },
+      {
+        "brand": "Puma",
+        "name": "RS-X Bold",
+        "price": 7999,
+        "size": [6, 7, 8, 9],
+        "color": "Grey",
+        "img": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80",
+        "rating": 4.3,
+        "discount": 10
+      },
+      {
+        "brand": "Reebok",
+        "name": "Classic Leather",
+        "price": 6499,
+        "size": [7, 8, 9, 10],
+        "color": "White",
+        "img": "https://images.unsplash.com/photo-1512403435804-6773f1528a99?auto=format&fit=crop&w=400&q=80",
+        "rating": 4.5,
+        "discount": 7
+      }
+    ]
+  },
+  {
+    "category": "Electronic Devices",
+    "items": [
+      {
+        "brand": "Apple",
+        "name": "iPhone 17",
+        "price": 82900,
+        "network": "5G",
+        "img": "https://www.apple.com/newsroom/images/2025/09/apple-debuts-iphone-17/article/Apple-iPhone-17-hero-250909_inline.jpg.large_2x.jpg",
+        "rating": 5,
+        "discount": 12
+      },
+      {
+        "brand": "Samsung",
+        "name": "Galaxy A35",
+        "price": 25999,
+        "network": "5G",
+        "img": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a35-1.jpg",
+        "rating": 4,
+        "discount": 5
+      },
+      {
+        "brand": "Sony",
+        "name": "WH-1000XM5 Headphones",
+        "price": 24999,
+        "network": "N/A",
+        "img": "https://cdn.sony.com/headphones/wh1000xm5-black-front-1200x1200.jpg",
+        "rating": 4.9,
+        "discount": 10
+      },
+      {
+        "brand": "Apple",
+        "name": "MacBook Pro 16",
+        "price": 239900,
+        "network": "N/A",
+        "img": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp16-spacegray-select-202110_GEO_EMEA_LANG_EN?wid=904&hei=840&fmt=jpeg&qlt=80&.v=1632799176000",
+        "rating": 5,
+        "discount": 15
+      }
+    ]
+  }
+]
