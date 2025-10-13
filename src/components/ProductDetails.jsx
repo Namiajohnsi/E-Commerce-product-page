@@ -1,4 +1,4 @@
-import products from '../data/products.json';
+import products from './data/products.json';
 export default function ProductDetails({ product, onBack, addToCart, addToWishlist }) {
   if (!product) return <p className="text-center mt-10 text-red-500">Product not found.</p>;
 
